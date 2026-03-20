@@ -87,11 +87,11 @@
                                 <span class="text-sm font-bold text-slate-400 uppercase tracking-tighter">Monto solicitado</span>
                                 <div class="flex items-center bg-slate-50 rounded-2xl border border-slate-100 px-4 py-2">
                                     <span class="text-blue-500 font-bold mr-1">$</span>
-                                    <input type="text" id="montoInput" value="17.000.000" 
+                                    <input type="text" id="montoInput" value="1.000.000" 
                                         class="w-36 text-right bg-transparent font-black text-xl text-slate-800 outline-none">
                                 </div>
                             </div>
-                            <input type="range" id="montoRange" min="500000" max="70000000" step="100000" value="17000000">
+                            <input type="range" id="montoRange" min="500000" max="70000000" step="100000" value="1000000">
                             <div class="flex justify-between text-[10px] font-bold text-slate-400">
                                 <span>MIN $500K</span>
                                 <span>MAX $70M</span>
@@ -108,7 +108,7 @@
                                     <span class="text-blue-500 font-bold ml-1 italic text-xs">meses</span>
                                 </div>
                             </div>
-                            <input type="range" id="plazoRange" min="6" max="144" step="1" value="84">
+                            <input type="range" id="plazoRange" min="6" max="144" step="1" value="12">
                             <div class="flex justify-between text-[10px] font-bold text-slate-400">
                                 <span>6 MESES</span>
                                 <span>144 MESES</span>
@@ -272,7 +272,7 @@
             resCapital.innerText = formatCurrency(capitalMes1);
             resSeguro.innerText = formatCurrency(seguroVal);
             resCuota.innerText = formatCurrency(cuotaObjetivo);
-            pctSeguroDisp.innerText = pctSeguro.toFixed(3) + "%";
+            pctSeguroDisp.innerText = pctSeguro.toFixed(5) + "%";
             resTasa.innerText = TASA_USURA_LIMITE.toFixed(2) + "%";
         }
 
